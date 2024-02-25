@@ -102,7 +102,8 @@ def menu_functionality(cart, character_input):
     item.item_price = float(input("Enter the item price: $"))
     item.item_quantity = int(input("Enter the item quantity: "))
     item.item_description = str(input("Enter the item description: "))
-    cart.cart_items.append(item)
+    # cart.cart_items.append(item)
+    cart.add_item(item)
 
   elif character_input == "r":
     print("\t OUTPUT SHOPPING CART")
